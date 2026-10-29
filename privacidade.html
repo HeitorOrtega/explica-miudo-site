@@ -11,45 +11,54 @@
 <main>
   <header>
     <a class="marca" href="./"><img src="perfil.png" alt=""><span class="bolinha"></span> EXPLICA MIÚDO</a>
-    <nav><a href="./">Início</a><a href="termos.html">Termos</a><a href="en/privacy.html">English</a></nav>
+    <nav><a href="./">Início</a><a href="termos.html">Termos</a><a href="en/privacidade.html">English</a></nav>
   </header>
 
   <h1>Política de Privacidade</h1>
-  <p class="pequeno">Última atualização: 28 de outubro de 2026</p>
+  <p class="pequeno">Última atualização: 29 de outubro de 2026</p>
 
-  <p>Esta política explica como o <strong>Explica Miúdo</strong> (o "aplicativo") usa dados. O aplicativo é uma ferramenta interna, de uso exclusivo do Explica Miúdo, que publica os vídeos produzidos pelo próprio Explica Miúdo nos canais do Explica Miúdo (YouTube <a href="https://www.youtube.com/@explicamiudo">@explicamiudo</a> e Instagram <a href="https://www.instagram.com/explicamiudo/">@explicamiudo</a>).</p>
+  <p>Esta política explica como o <strong>Explica Miúdo</strong> (o "aplicativo") usa dados. O aplicativo é uma ferramenta interna, de uso exclusivo do Explica Miúdo, que publica os vídeos produzidos pelo próprio Explica Miúdo nos canais do Explica Miúdo (YouTube <a href="https://www.youtube.com/@explicamiudo">@explicamiudo</a> e Instagram <a href="https://www.instagram.com/explicamiudo/">@explicamiudo</a>) e acompanha o desempenho desses vídeos.</p>
 
-  <h2>1. Quem usa o aplicativo</h2>
+  <h2 id="youtube">1. Uso dos Serviços de API do YouTube</h2>
+  <p>O aplicativo <strong>usa os Serviços de API do YouTube</strong> (YouTube Data API v3 e YouTube Analytics API). Ao usar o aplicativo, ou ao interagir com o conteúdo que ele publica no YouTube, você concorda com os <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a>. Os dados obtidos pelos Serviços de API do YouTube também estão sujeitos à <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</p>
+
+  <h2 id="quem">2. Quem usa o aplicativo</h2>
   <p>Somente o próprio Explica Miúdo. O aplicativo não é oferecido ao público, não tem cadastro de usuários e não acessa contas de outras pessoas.</p>
 
-  <h2>2. Quais dados acessamos</h2>
-  <p>Com a autorização do dono do canal, por meio dos Serviços de API do YouTube, o aplicativo acessa apenas a conta do Explica Miúdo para:</p>
+  <h2 id="dados">3. Quais dados acessamos</h2>
+  <p>Com a autorização do dono do canal (login do Google com OAuth), o aplicativo acessa apenas a conta do Explica Miúdo, com estas permissões:</p>
   <ul>
-    <li>enviar vídeos produzidos pelo Explica Miúdo para o canal do Explica Miúdo, com título, descrição e configurações de publicação;</li>
-    <li>ler as estatísticas públicas e de desempenho dos vídeos do próprio canal (visualizações, curtidas, comentários), usadas para melhorar os próximos vídeos.</li>
+    <li><strong>youtube.upload</strong>: enviar vídeos produzidos pelo Explica Miúdo para o canal do Explica Miúdo, com título, descrição e configurações de publicação;</li>
+    <li><strong>youtube.readonly</strong>: confirmar qual canal foi autorizado (nome e ID do canal) e ler os dados dos vídeos do próprio canal (ID, título, link, status);</li>
+    <li><strong>yt-analytics.readonly</strong>: ler as estatísticas dos vídeos do próprio canal (visualizações, curtidas, comentários, tempo de exibição e retenção), usadas para melhorar os próximos vídeos.</li>
   </ul>
   <p><strong>Não coletamos dados de terceiros.</strong> O aplicativo não lê, armazena nem compartilha dados pessoais de espectadores, inscritos ou de qualquer outra pessoa.</p>
 
-  <h2>3. Como guardamos os dados</h2>
-  <p>As credenciais de acesso (tokens) ficam guardadas de forma privada no servidor do Explica Miúdo e nunca são publicadas nem compartilhadas. As estatísticas do canal ficam em um banco de dados interno, usado só para análise do próprio canal.</p>
+  <h2 id="armazenamento">4. O que armazenamos e por quanto tempo</h2>
+  <ul>
+    <li><strong>Credencial de acesso (token OAuth):</strong> guardada de forma privada e criptografada no servidor do Explica Miúdo, até o acesso ser revogado. Nunca é publicada nem compartilhada.</li>
+    <li><strong>Dados dos vídeos do canal</strong> (ID, título, link, data de publicação): guardados enquanto o vídeo estiver no canal, para ligar cada vídeo às suas estatísticas. Apagados em até 30 dias depois que o vídeo é removido do YouTube.</li>
+    <li><strong>Estatísticas dos vídeos</strong> (números agregados, sem dados de pessoas): coletadas 24 horas e 72 horas depois de cada publicação e atualizadas pelo menos a cada 30 dias. Estatísticas que deixam de ser atualizadas são apagadas em até 30 dias.</li>
+  </ul>
+  <p>Quando o acesso é revogado, todos os dados obtidos pelos Serviços de API do YouTube são apagados em até 7 dias.</p>
 
-  <h2>4. Compartilhamento</h2>
+  <h2 id="compartilhamento">5. Compartilhamento</h2>
   <p>Não vendemos, alugamos nem compartilhamos dados com terceiros. Os dados obtidos pelas APIs do Google são usados de acordo com a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
 
-  <h2>5. Serviços do YouTube e do Google</h2>
-  <p>O aplicativo usa os Serviços de API do YouTube. Ao interagir com o conteúdo do Explica Miúdo no YouTube, você também está sujeito aos <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a> e à <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</p>
+  <h2 id="revogar">6. Como revogar o acesso</h2>
+  <p>O acesso do aplicativo à conta do Google pode ser revogado a qualquer momento na página de permissões de segurança do Google: <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>. Quando isso acontece, o token guardado deixa de funcionar e é apagado, junto com os dados do YouTube, em até 7 dias.</p>
 
-  <h2>6. Como revogar o acesso</h2>
-  <p>O acesso do aplicativo à conta do Google pode ser revogado a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Quando isso acontece, os tokens guardados deixam de funcionar e são apagados.</p>
+  <h2 id="exclusao">7. Como pedir a exclusão dos dados</h2>
+  <p>Para pedir a exclusão de qualquer dado guardado pelo aplicativo, mande uma mensagem direta para <a href="https://www.instagram.com/explicamiudo/">@explicamiudo no Instagram</a> com o assunto "Exclusão de dados". Confirmamos o pedido e apagamos os dados em até 7 dias. Revogar o acesso (seção 6) também apaga os dados automaticamente.</p>
 
-  <h2>7. Este site</h2>
+  <h2 id="site">8. Este site</h2>
   <p>Este site é estático, não usa cookies, não tem formulários e não usa ferramentas de rastreamento.</p>
 
-  <h2>8. Contato</h2>
-  <p>Dúvidas sobre esta política: mande uma mensagem direta para <a href="https://www.instagram.com/explicamiudo/">@explicamiudo no Instagram</a>.</p>
+  <h2 id="contato">9. Contato</h2>
+  <p>Dúvidas sobre esta política: mensagem direta para <a href="https://www.instagram.com/explicamiudo/">@explicamiudo no Instagram</a>.</p>
 
   <footer>
-    <a href="./">Início</a><a href="termos.html">Termos de Serviço</a><a href="en/privacy.html">English</a>
+    <a href="./">Início</a><a href="termos.html">Termos de Serviço</a><a href="en/privacidade.html">English</a>
     <p>© 2026 Explica Miúdo</p>
   </footer>
 </main>
